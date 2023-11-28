@@ -100,8 +100,9 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+		background-color: #b9ab15;
+		background-image:  #b9ab15;
+		
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -109,6 +110,19 @@ input, select, textarea {
 		background-position: center,
  center;
 	}
+	#footer{
+		background-color: rgb(61, 66, 90);
+	}
+	 .beforeFooterWrapper:after {
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-color:rgb(61, 66, 90);
+		content: "";
+		display: block;
+		height: 6.5em;
+		position: absolute;
+		width: 100%;
+	  }
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
