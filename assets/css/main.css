@@ -1,5 +1,9 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:300,700';
 
 /*
 	Solid State by HTML5 UP
@@ -113,7 +117,10 @@ input, select, textarea {
 	#footer{
 		background-color: rgb(61, 66, 90);
 	}
-	 .beforeFooterWrapper:after {
+	.beforeFooterWrapper:before {
+		transform: scaleX(1) !important; 
+	  }
+	 .beforeFooterWrapper.alt:after {
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		background-color:rgb(61, 66, 90);
@@ -122,6 +129,7 @@ input, select, textarea {
 		height: 6.5em;
 		position: absolute;
 		width: 100%;
+		transform: scaleY(-1) scaleX(1) !important;
 	  }
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -263,6 +271,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		color:white !important;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -274,10 +283,11 @@ input, select, textarea {
 		text-transform: uppercase;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,h3 {
 			color: inherit;
 			text-decoration: none;
 			border-bottom: 0;
+			color:white !important;
 		}
 
 		h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
@@ -287,6 +297,7 @@ input, select, textarea {
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			padding-bottom: 1em;
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			color:white !important;
 		}
 
 	h2 {
@@ -2158,6 +2169,7 @@ input, select, textarea {
 
 		.icon.solid:before {
 			font-weight: 900;
+			color: white !important;
 		}
 
 		.icon.brands:before {
@@ -2748,6 +2760,11 @@ input, select, textarea {
 	top: -50px;
 
 }
+.hyperTo{
+	margin-bottom: 50px;
+	color:white !important;
+	text-decoration: none !important;
+}
 /* Features */
 
 	.features {
@@ -2846,6 +2863,9 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 		#header h1 {
@@ -2875,6 +2895,7 @@ input, select, textarea {
 			right: 0.7em;
 			text-transform: uppercase;
 			top: 0.7em;
+			display: flex;
 		}
 
 			#header nav a {
@@ -2897,6 +2918,7 @@ input, select, textarea {
 					border-radius: 5px;
 					box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
 					padding: 0 1.35em;
+					color:white !important;
 				}
 
 					#header nav a[href="#menu"]:before {
@@ -2919,6 +2941,7 @@ input, select, textarea {
 
 					#header nav a[href="#menu"]:hover {
 						background-color: rgba(255, 255, 255, 0.025);
+						color:white !important;
 					}
 
 					#header nav a[href="#menu"]:active {
@@ -3054,6 +3077,7 @@ input, select, textarea {
 		#menu h2 {
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 			padding-bottom: 1em;
+			color: white !important;
 		}
 
 		#menu .close {
@@ -3145,6 +3169,7 @@ input, select, textarea {
 		#banner .inner {
 			margin: 0 auto;
 			width: 55em;
+			color:white !important;
 		}
 
 		#banner .logo {
@@ -3919,8 +3944,264 @@ input, select, textarea {
 		font-weight: bold;
 	}
 
-		@media screen and (max-width: 760px) {
+		@media screen and (max-width: 990px) {
 			.invisibleformobile{
 				display: none;
 		}
 	}
+	.select {
+		position: relative;
+		overflow: hidden;
+		display: block;
+		margin: auto;
+		width: 330px;
+		height: 100%;
+		border-bottom: 0px;
+		border-radius: 3px;
+		font-size: 12px;
+		box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
+	  }
+	  .select > i.toggle {
+		position: absolute;
+		z-index: 4;
+		right: 1.5em;
+		top: 1.6em;
+		color: #ccc;
+	  }
+	  .select .title,
+	  .select .placeholder {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		padding: 1.5em 2em;
+		background: white;
+		border-top: 1px solid rgba(0, 0, 0, 0.05);
+		cursor: pointer;
+	  }
+	  .select > input {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		display: block;
+		opacity: 0;
+		cursor: pointer;
+	  }
+	  .select > input:checked ~ i.toggle.icon-arrow-down {
+		display: none;
+	  }
+	  .select > input:checked ~ i.toggle.icon-arrow-up {
+		display: block;
+	  }
+	  .select > input:checked div.options label.option .title {
+		display: none !important;
+	  }
+	  .select > input:not(:checked) {
+		z-index: 4;
+	  }
+	  .select > input:not(:checked) ~ label.option > span.title {
+		display: none;
+	  }
+	  .select > input:not(:checked) ~ i.toggle.icon-arrow-up {
+		display: none;
+	  }
+	  .select > input:not(:checked) ~ i.toggle.icon-arrow-down {
+		display: block;
+	  }
+	  .select > input:disabled {
+		cursor: no-drop;
+	  }
+	  .select > span.placeholder {
+		position: relative;
+		z-index: 0;
+		display: inline-block;
+		width: 100%;
+		color: #999;
+		border-top: 0px;
+	  }
+	  .select label.option {
+		display: block;
+		overflow: hidden;
+		z-index: 1;
+		width: 100%;
+		transition: all 1s ease-out;
+	  }
+	  .select label.option span.title {
+		position: relative;
+		z-index: 2;
+	  }
+	  .select label.option span.title i.icon {
+		padding-right: 8px;
+		color: #92a8d1;
+	  }
+	  .select label.option span.title:hover {
+		color: #fff;
+		background: rgba(255, 255, 255, 0.3);
+		box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
+	  }
+	  .select label.option input {
+		display: none;
+	  }
+	  .select label.option input:checked ~ span.title {
+		position: absolute;
+		display: block;
+		z-index: 3;
+		top: 0px;
+		font-size: 12px;
+		background: #fff;
+		border-top: 0px;
+		box-shadow: none;
+		color: inherit;
+		width: 100%;
+	  }
+	  .select label.option input:disabled ~ span.title {
+		background: #f9f9f9 !important;
+		color: #aaa;
+	  }
+	  .select label.option input:disabled ~ span.title:hover {
+		color: #aaa;
+		background: none;
+		cursor: no-drop;
+	  }
+	  
+	  .select2 {
+		position: relative;
+		overflow: hidden;
+		display: block;
+		margin: auto;
+		width: 330px;
+		height: 100%;
+		border-bottom: 0px;
+		border-radius: 3px;
+		font-size: 12px;
+		box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
+	  }
+	  .select2 i.toggle {
+		position: absolute;
+		z-index: 4;
+		right: 1.5em;
+		top: 1.6em;
+		color: #ccc;
+	  }
+	  .select2 .title,
+	  .select2 .placeholder {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		padding: 1.5em 2em;
+		background: white;
+		border-top: 1px solid rgba(0, 0, 0, 0.05);
+		cursor: pointer;
+	  }
+	  .select2 > label > input {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		display: block;
+		opacity: 0;
+		cursor: pointer;
+	  }
+	  .select2 > label > input:checked {
+		z-index: 2;
+	  }
+	  .select2 > label > input:checked ~ i.toggle.icon-plus {
+		display: none;
+	  }
+	  .select2 > label > input:checked ~ i.toggle.icon-minus {
+		display: block;
+	  }
+	  .select2 > label > input:not(:checked) ~ i.toggle.icon-minus {
+		display: none;
+	  }
+	  .select2 > label > input:not(:checked) ~ i.toggle.icon-plus {
+		display: block;
+	  }
+	  .select2 > label > input:not(:checked) ~ label.option input:not(:checked) ~ .title {
+		display: none !important;
+	  }
+	  .select2 > label > input:disabled {
+		cursor: no-drop;
+	  }
+	  .select2 label > span.placeholder {
+		position: relative;
+		z-index: 0;
+		display: inline-block;
+		width: 100%;
+		color: #999;
+		border-top: 0px;
+	  }
+	  .select2 label.option {
+		display: block;
+		overflow: hidden;
+		z-index: 1;
+		width: 100%;
+		transition: all 1s ease-out;
+	  }
+	  .select2 label.option span.title {
+		position: relative;
+		z-index: 2;
+	  }
+	  .select2 label.option span.title i.icon {
+		padding-right: 8px;
+		color: #92a8d1;
+	  }
+	  .select2 label.option span.title:hover {
+		color: #fff;
+		background: rgba(146, 168, 209, 0.5);
+		box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
+	  }
+	  .select2 label.option input {
+		display: none;
+	  }
+	  .select2 label.option input:checked ~ span.title {
+		position: absolute;
+		display: block;
+		z-index: 1;
+		top: 0px;
+		font-size: 12px;
+		background: #fff;
+		border-top: 0px;
+		box-shadow: none;
+		color: inherit;
+		width: 100%;
+	  }
+	  .select2 label.option input:disabled ~ span.title {
+		background: #f9f9f9 !important;
+		color: #aaa;
+	  }
+	  .select2 label.option input:disabled ~ span.title:hover {
+		color: #aaa;
+		background: none;
+		cursor: no-drop;
+	  }
+	  .dropdown-menu.show {
+		display: block;
+		background-color: #2d3a69;
+	}
+	  .dropdown-item {
+		font-weight: bold !important;
+		color: white !important;
+	 }
+	  .dropdown-item:hover {
+         background-color: #37467d !important;
+	  }
+	  .btn-info:hover {
+		color: #fff;
+		background-color:transparent !important;
+		border-color: transparent !important;
+	}
+	.btn-info:not(:disabled):not(.disabled).active:focus, .btn-info:not(:disabled):not(.disabled):active:focus, .show>.btn-info.dropdown-toggle:focus {
+		box-shadow: none !important;
+	}
+	.simpleHyper{
+		color: white !important;
+      text-decoration: none !important;
+	}
+	
