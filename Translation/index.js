@@ -150,7 +150,7 @@ const languageTexts = {
       "Unser Komitee besteht aus hochqualifizierten und engagierten Fachleuten, die über langjährige Erfahrung im Kampf gegen Kriminalität und Terrorismus verfügen. Jedes Mitglied unseres Teams arbeitet zum Wohle des allgemeinen Wohlergehens und der Sicherheit aller.",
     section5Title: "Statti",
     section5Article1Header:
-      "„Magnetstürme und Sicherheit auf den Straßen: Initiative von Lyubomir Sopilnik“",
+      "",
     section5Article1Text: `In der neuen Phase der Patrouillen auf den Straßen der Region Lemberg gibt es eine nicht überzeugte Allianz – der Wissenschafts- und Strafverfolgungsbeamte Lyubomir Sopilnik will den Zustrom magnetischer Stürme auf die Sicherheit auf den Straßen überwachen. Kerivnik vom Wissenschaftlichen Zentrum des Außenministeriums der Ukraine in der Region Lemberg zeigt, dass diese Naturphänomene das Risiko des Straßentransports erheblich verringern können.
                                           
     Die Ergebnisse dieser Studie zeigten, dass es während der Stunde magnetischer Stürme zu einer Zunahme der Reaktion von Wasser, einer Änderung der Temperatur und Bewegung oder einer Abnahme des Schädeldrucks kommt.
@@ -161,7 +161,7 @@ const languageTexts = {
     section5Article2Text: `Zur Unterstützung des GUMVS der Ukraine in der Region Lemberg führt Lyubomir Sopilnik neue Sicherheitsansätze ein. Den Anordnungen zufolge werden die Polizei und die Polizei während der Stunde der magnetischen Stürme weiterhin in einem verstärkten Regime agieren.
 
     Der Artikel enthüllt die Einzelheiten der Initiative und wissenschaftlichen Forschung von Lyubomir Sopilnik und beschreibt auch die positiven Ergebnisse dieser Ansätze zur Reduzierung von Unfällen und Gewalt im Straßenverkehr. Unterstützt wird er durch seine Bemühungen, die Sicherheit der Bevölkerung zu gewährleisten und die Trümmer der Straßen während der Zeit von Naturgefahren zu schützen.`,
-    section5HyperLink: "Posilannya auf der Statue",
+    section5HyperLink: "Verknüpfung auf der Statue",
     section6Title: "Lizenz",
     section6SubTitle:
       "Unser Ausschuss verpflichtet sich zur Einhaltung aller Gesetze, die Aktivitäten im Kampf gegen Kriminalität und Terrorismus regeln. In diesem Bereich finden Sie Informationen zu Lizenzen und den wichtigen Regeln, die unsere Arbeit regeln.",
@@ -195,7 +195,7 @@ const languageTexts = {
       "Il nostro comitato è composto da professionisti altamente qualificati e dedicati che vantano molti anni di esperienza nella lotta alla criminalità e al terrorismo. Ogni membro del nostro team lavora a beneficio del benessere generale e della sicurezza di tutti.",
     section5Title: "Articoli",
     section5Article1Header:
-      '"Tempeste magnetiche e sicurezza nelle strade: iniziativa di Lyubomir Sopilnik"',
+      'Tempeste magnetiche e sicurezza nelle strade: iniziativa di Lyubomir Sopilnik',
     section5Article1Text: `Nella nuova fase di pattugliamento delle strade dell'oblast di Leopoli, appare un'alleanza inaspettata: lo scienziato e agente delle forze dell'ordine Lyubomyr Sopilnyk ha deciso di indagare sull'impatto delle tempeste magnetiche sulla sicurezza stradale. Il capo del Centro Scientifico del Ministero degli Affari Interni e delle Comunicazioni dell'Ucraina nella regione di Lviv ha dimostrato che questi fenomeni naturali possono aumentare significativamente il rischio di incidenti stradali.
 
   Secondo i risultati della sua ricerca, si è scoperto che durante le tempeste magnetiche si verifica un aumento del tempo di reazione dei conducenti, cambiamenti di temperatura e un aumento o una diminuzione della pressione cranica.
@@ -226,7 +226,67 @@ const languageTexts = {
     invisibleMobilePartTwoText: "NELLA REGIONE DI LVIV",
     visiblePart: "SOTTOCOMITATO ANTITERRORISMO",
   },
+  fr: {
+    section1Title:
+      "Міжнародний Антикримінальний і Антитерористичний підкомітет  Львівської області",
+    section1SubTitle: "Офіційний вебсайт підкомітету",
+    section2Title:
+      "Вітаємо вас на офіційному веб-сайті Міжнародного Антикримінального і Антитерористичного підкомітету Львівської області. Наш комітет забезпечує координацію та співпрацю в боротьбі з кримінальною та терористичною діяльністю для забезпечення безпеки нашого регіону та міжнародної спільноти.",
+    section3Title: "Про нас",
+    section3SubTitle:
+      "Міжнародний Антикримінальний і Антитерористичний підкомітет Львівської області — це організація, яка об'єднує висококваліфікованих фахівців у сфері боротьби зі злочинністю та тероризмом. Наша місія - забезпечити безпеку громадян і зміцнити правовий порядок через ефективну співпрацю та інноваційні підходи.",
+    section4Title: "Команда",
+    section4SubTitle:
+      "Наш комітет складається з висококваліфікованих та відданих професіоналів, які мають багаторічний досвід у сфері боротьби зі злочинністю та тероризмом. Кожен член нашої команди працює на благо загального добробуту і забезпечення безпеки для усіх.",
+    section5Title: "Des articles",
+    section5Article1Header:
+      'Магнітні бурі та Безпека на Дорогах: Ініціатива Любомира Сопільника',
+    section5Article1Text: `У новому етапі патрулювання на дорогах Львівщини з'являється несподіваний союз – науковець та правоохоронець Любомир Сопільник вирішив дослідити вплив магнітних бурь на безпеку на дорогах. Керівник Наукового центру ГУМВС України у Львівській області довів, що ці природні явища можуть значно підвищити ризик дорожньо-транспортних пригод.
+											
+        За результатами його досліджень виявлено, що під час магнітних бурь спостерігається збільшення часу реакції водіїв, зміни температури та підвищення або зниження черепного тиску.
+        
+        Спираючись на свої дослідження, Сопільник розробив попереджувальні знаки, які можуть зменшити ризик аварійності в період магнітних бурь.`,
+    section5Article2Header:
+      "Антиаварійну методику полковника Сопільника, яку застосовують у Польщі, випробують на Львівщині",
+    section5Article2Text: `	За підтримки керівництва ГУМВС України у Львівській області, Любомир Сопільник впроваджує нові заходи безпеки. Згідно з розпорядженням, підрозділи міліції і ДАІ працюватимуть у посиленому режимі під час магнітних бурь.
+
+    Стаття розкриває деталі ініціативи та наукові дослідження Любомира Сопільника, а також описує очікувані позитивні результати впровадження цих заходів для зменшення аварій та злочинності на дорогах. Підкреслюється його прагнення забезпечити безпеку громадськості та покращити якість дорожнього руху під час природних явищ.`,
+    section5HyperLink: "Посилання на статтю",
+    section6Title: "Ліцензія",
+    section6SubTitle:
+      "Наш комітет працює відповідно до всіх вимог та законів, які регулюють діяльність в сфері боротьби зі злочинністю та тероризмом. На цьому розділі ви можете знайти інформацію про ліцензії та повноваження, що регулюють нашу роботу.",
+    section6Text:
+      "ГОЛОВНЕ УПРАВЛІННЯ ОСВІТИ І НАУКИ ЛЬВІВСЬКОЇ ОБЛАСНОЇ ДЕРЖАВНОЇ АДМІНІСТРАЦІЇ",
+    section7Title: "КОНТАКТНА ІНФОРМАЦІЯ:",
+    section7Text:
+      "Зв'яжіться з нами, щоб дізнатися більше або повідомити про потенційні загрози. Ми завжди відкриті для співпраці та готові взяти на себе відповідальність за безпеку нашої області і за її межами.",
+    section8Text: "Усі права захищені",
+    menuHeader: "Меню",
+    menuItem1: "Головна",
+    menuItem2: "Про нас",
+    menuItem3: "Команда",
+    menuItem4: "Ліцензія",
+    closeButton: "Закрити",
+    invisibleMobilePartOneText: "МІЖНАРОДНИЙ АНТИКРИМІНАЛЬНИЙ І",
+    invisibleMobilePartTwoText: "ЛЬВІВСЬКІЙ ОБЛАСТІ",
+    visiblePart: "АНТИТЕРОРИСТИЧНИЙ ПІДКОМІТЕТ",
+  },
 };
+// function changeLanguage(language) {
+//   const selectElement = document.getElementById("languageSelect");
+//   const selectedLanguage = navigator.language.split('-')[0]; 
+//   console.log(selectedLanguage);
+//   updateTexts(selectedLanguage);
+// }
+// changeLanguage();
 
+// function updateTexts(language) {
+//   const elementsToUpdate = document.querySelectorAll("[data-text-key]");
 
-
+//   elementsToUpdate.forEach((element) => {
+//     const textKey = element.getAttribute("data-text-key");
+//     element.textContent = languageTexts[language][textKey];
+//   });
+// }
+// const selectedLanguage = navigator.language.split('-')[0]; 
+// updateTexts('it');

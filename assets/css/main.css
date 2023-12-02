@@ -4204,4 +4204,14 @@ input, select, textarea {
 		color: white !important;
       text-decoration: none !important;
 	}
-	
+	.hyperToArticle{
+		background-color:white;
+		padding: 5px;
+		border-radius: 5px;
+		color:#45558d !important;
+		transition-duration: 0.3s;
+		}
+		.hyperToArticle:hover{
+			color:#45558d !important;
+			text-decoration: none;
+		}
